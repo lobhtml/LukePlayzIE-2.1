@@ -1,6 +1,6 @@
 # LukePlayzIE Version History
 
-## v1.0 - 26-10-2024
+## v1.0 - 05-12-2024
 - Bootstrap framework linked
 - Nav bar added with brand image and active/unactive links
 - Alert message with close button
