@@ -11,4 +11,4 @@
 
 ## v1.1 - 06-12-2024
 - Responsive table to prevent overflow on mobile devices
-- About me added as default webpage
+- About me page added as default homepage
