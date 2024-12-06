@@ -8,3 +8,4 @@
 - Dropdown button added to sort by year (linking to a new html doc)
 - Basic image carousel page to display art
 - Current year and copyright info added to the bottom of the webpage
+- Responsive table feature added to avoid overflow on mobile devices
