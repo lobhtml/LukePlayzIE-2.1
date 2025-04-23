@@ -1,2 +1,5 @@
 # LukePlayzIE
-A blog website developed to display my gaming-related content.
+The official LukePlayzIE website. A nostalgic HTML website designed with 98.css. 
+Browse gaming videos, retro art and other original content.
+
+Build stylesheet - https://botoxparty.github.io/XP.css/
