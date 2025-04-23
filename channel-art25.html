@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The official LukePlayzIE website. 
+    A nostalgic HTML website designed with 98.css. 
+    Browse gaming videos, retro art and other original content.">
+    <title>LukePlayzIE - Channel art 2025</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+  </head>  
+  <style>
+body {
+  background-color: #c3c3c3;
+}
+table, th, td {
+  border:1px solid black;
+}
+.responsive-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Optional spacing between images */
+  }
+  .responsive-images img {
+    width: 25%;
+  }
+  @media (max-width: 600px) {
+    .responsive-images img {
+      width: 100%;
+    }
+  }
+  </style>
+<!--Site title bar-->
+  <body>
+    <div class="title-bar">
+        <div class="title-bar-text">LukePlayzIE - Channel art 2025</div>
+        <div class="title-bar-controls">
+        </div>
+      </div>
+    <div>
+      <a href="index.html">
+        <img src="LukePlayzIE_24_Profile.png" alt="Site logo" width="120" height="120" style="padding: 10px;">
+      </a>
+    </div>
+<!--Dropdown menu-->
+      <select onchange="window.location.href=this.value" style="margin-top: 20px;">
+        <option value="">Select webpage</option>
+        <option value="index.html">About me</option>
+        <option value="game-list25.html">Game list</option>
+        <option value="channel-art25.html" selected>Channel art</option>
+      </select>
+<!--Sort by year-->
+      <select onchange="window.location.href=this.value" style="margin-top: 20px;">
+        <option value="">Sort by year</option>
+        <option value="channel-art25.html" selected>2025</option>
+        <option value="channel-art24.html">2024</option>
+      </select>
+<!--Image gallery-->
+      <div class="responsive-images" style="margin-top: 20px;">
+        <img src="Channel art/Channel art 2025/XP_Desktop_4_3.png" alt="Windows XP art">
+        <img src="Channel art/Channel art 2025/Biohazard_JP_Website.png" alt="Resident Evil Japanese art PS1">
+        <img src="Channel art/Channel art 2025/Gen2-data-screen.png" alt="Pokemon Gen 2 data screen">
+      </div>
+      <div class="responsive-images" style="margin-top: 5px;">
+        <img src="Channel art/Channel art 2025/Xtreme_PC_Cover_Art.png" alt="Xtreme PC Cover art">
+      </div>
+  </body>
+<!--Footer section-->
+  <footer style="text-align: center; margin: 30px 0; color: hsl(0, 0%, 0%); font-family: serif; font-size:150%;">
+    <p>&copy; <span id="current-year"></span> LukePlayzIE</p>
+  </footer>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+  </html>
