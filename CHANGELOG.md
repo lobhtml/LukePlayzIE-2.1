@@ -1,4 +1,4 @@
-# LukePlayzIE Version History
+# LukePlayzIE website - Bootstrap build history
 
 ## v1.0 - 05-12-2024
 - Bootstrap framework linked
@@ -12,3 +12,8 @@
 ## v1.1 - 06-12-2024
 - Responsive table to prevent overflow on mobile devices
 - About me page added as default homepage
+
+## v1.2 - 21-04-2025
+- Lazy loading images
+- HTML comments added for ease of updating content
+- Channel art div class updated (correcting spacing issue on desktop vs mobile)
