@@ -3,160 +3,172 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The official LukePlayzIE website. 
-    A nostalgic HTML website designed with 98.css. 
-    Browse gaming videos, retro art and other original content.">
+    <meta name="description" content="The official LukePlayzIE website. Version 2.0 Bootstrap build. Browse gaming videos, retro art and other original content.">
     <title>LukePlayzIE - Game list 2025</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/98.css">
-  </head>  
-  <style>
-body {
-  background-color: #c3c3c3;
-}
-table, th, td {
-  border:1px solid black;
-}
-  </style>
-<!--Site title bar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
   <body>
-    <div class="title-bar">
-        <div class="title-bar-text">LukePlayzIE - Game list 2025</div>
-        <div class="title-bar-controls">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<!--Nav Bar start-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">  
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="LukePlayzIE_24_Text2.png" alt="LukePlayzIE" height="50">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">About me</a>
+              <a class="nav-link active"  aria-current="page" href="game-list25.html">Game list</a>
+              <a class="nav-link" href="channel-art25.html">Channel art</a>
+            </div>
+          </div>
         </div>
+      </nav>
+<!--Nav Bar end-->
+<!--Alert banner start-->
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+    Take a moment to subscribe to my <a href="#" class="alert-link">YouTube channel</a>!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<!--Alert banner end-->
+<div class="container-fluid">
+<!--Dropdown button start--> 
+      <div class="dropdown" style="margin-top: 20px;">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Sort by year
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="game-list25.html">2025</a></li>
+          <li><a class="dropdown-item" href="game-list24.html">2024</a></li>
+        </ul>
       </div>
-    <div>
-      <a href="index.html">
-        <img src="LukePlayzIE_24_Profile.png" alt="Site logo" width="120" height="120" style="padding: 10px;">
-      </a>
-    </div>
-<!--Dropdown menu-->
-      <select onchange="window.location.href=this.value" style="margin-top: 20px;">
-        <option value="">Select webpage</option>
-        <option value="index.html">About me</option>
-        <option value="game-list25.html" selected>Game list</option>
-        <option value="channel-art25.html">Channel art</option>
-      </select>
-<!--Sort by year-->
-      <select onchange="window.location.href=this.value" style="margin-top: 20px;">
-        <option value="">Sort by year</option>
-        <option value="game-list25.html" selected>2025</option>
-        <option value="game-list24.html">2024</option>
-      </select>
-<!--Table-->
-      <table style="width:100%; margin-top: 20px; font-size:125%; font-family:serif;">
-        <tr>
-          <th>Image</th>
-          <th>Link</th>
-          <th>Game title</th>
-          <th>System</th>
-          <th>Genre</th>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Mega-man-sequel-wars-1.jpg" alt="Mega Man: The Sequel Wars" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=26rJlef5wBM">Video link</a></td>
-          <td>Mega Man: The Sequel Wars</td>
-          <td>Sega Mega Drive</td>
-          <td>Action/Platformer</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Blood-golf-2023.jpg" alt="Blood Golf" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=mKcUUdcCoT0">Video link</a></td>
-          <td>Blood Golf</td>
-          <td>PC</td>
-          <td>PVP/PVE Golf-em-up</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Exfiltrator-PC.png" alt="Exfiltrator: Cyber Stealth Missions" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=gA9DPwpZLag">Video link</a></td>
-          <td>Exfiltrator: Cyber Stealth Missions</td>
-          <td>PC</td>
-          <td>Stealth</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Spiritrest-2.jpg" alt="Spiritrest" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=tfcJWWFDYxM">Video link</a></td>
-          <td>Spiritrest</td>
-          <td>PC</td>
-          <td>3D Platformer</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Trial-of-the-sorcerer.jpg" alt="Trial Of The Sorcerer" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=xYH_-_8-QxY">Video link</a></td>
-          <td>Trial Of The Sorcerer</td>
-          <td>PICO-8</td>
-          <td>Action/RPG</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/avgn-8bit.jpg" alt="Angry Video Game Nerd 8-Bit" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=lU2KkxJtBU8">Video link</a></td>
-          <td>Angry Video Game Nerd 8-Bit</td>
-          <td>PC</td>
-          <td>Action/Platformer</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Gunship-gb.png" alt="Gunship GB" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=aIeTSRw0wx0">Video link</a></td>
-          <td>Gunship GB</td>
-          <td>GB</td>
-          <td>Rail Shooter</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Smackdown-1.jpg" alt="WWF SMackdown!" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=Zn2DK2pnz0k">Video link</a></td>
-          <td>WWF Smackdown!</td>
-          <td>PS1</td>
-          <td>Wrestling</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Pico-mix.jpg" alt="Backstreet Warriors/Pico World Race" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=w3T8S0R0xjc">Video link</a></td>
-          <td>Backstreet Warriors/Pico World Race</td>
-          <td>PICO-8</td>
-          <td>Beat em up/Racing</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Fire-warrior-1.jpg" alt="Warhammer 40,000: Fire Warrior" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=eEGOn4wYh2w">Video link</a></td>
-          <td>Warhammer 40,000: Fire Warrior</td>
-          <td>PC</td>
-          <td>First-person Shooter</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/BioCrisis-1.jpg" alt="BioCrisis" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=5PMJyf5-Wfo">Video link</a></td>
-          <td>BioCrisis</td>
-          <td>PC</td>
-          <td>Survival Horror</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/RE-1.5.jpg" alt="Resident Evil 1.5 Battle Coliseum" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=4-BHWq4iJH4">Video link</a></td>
-          <td>Resident Evil 1.5 Battle Coliseum</td>
-          <td>PS1</td>
-          <td>Fan Game/Mod</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Shadow-prisoner.jpg" alt="Shadow Prisoner" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=HwgwVNJbvkE">Video link</a></td>
-          <td>Shadow Prisoner</td>
-          <td>PC</td>
-          <td>Anime/2D Fighter</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2025/Poke-gold-151-part1.png" alt="Pokemon Gold 151 Challenge" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/playlist?list=PLBBxSYze67ecr6gwXJyZUKmSAyIwkec2g">Video link</a></td>
-          <td>Pokemon Gold 151 Challenge</td>
-          <td>GBC</td>
-          <td>RPG</td>
-        </tr>
-      </table>
-  </body>
-<!--Footer section-->
-  <footer style="text-align: center; margin: 30px 0; color: hsl(0, 0%, 0%); font-family: serif; font-size:150%;">
-    <p>&copy; <span id="current-year"></span> LukePlayzIE</p>
-  </footer>
-  <script>
+<!--Dropdown button end-->
+<!--Table start-->
+<div class="table-responsive" style="margin-top: 20px;">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Link</th>
+        <th scope="col">Game title</th>
+        <th scope="col">System</th>
+        <th scope="col">Genre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="Game art/Game art 2025/Mega-man-sequel-wars-1.jpg" alt="Mega Man The Sequel Wars" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=26rJlef5wBM" target="_blank">Video link</a></td>
+        <td>Mega Man: The Sequel Wars</td>
+        <td>Sega Mega Drive</td>
+        <td>Action/Platformer</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Blood-golf-2023.jpg" alt="BLOOD GOLF 2023" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=mKcUUdcCoT0" target="_blank">Video link</a></td>
+        <td>Blood Golf</td>
+        <td>PC</td>
+        <td>PVP/PVE Golf-em-up</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Exfiltrator-PC.png" alt="Exfiltrator PC" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=gA9DPwpZLag" target="_blank">Video link</a></td>
+        <td>Exfiltrator: Cyber Stealth Missions</td>
+        <td>PC</td>
+        <td>Classic Stealth</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Spiritrest-2.jpg" alt="Spiritrest PC" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=tfcJWWFDYxM" target="_blank">Video link</a></td>
+        <td>Spiritrest</td>
+        <td>PC</td>
+        <td>3D Platformer</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Trial-of-the-sorcerer.jpg" alt="Trial Of The Sorcerer PICO-8" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=xYH_-_8-QxY" target="_blank">Video link</a></td>
+        <td>Trial Of The Sorcerer</td>
+        <td>PICO-8</td>
+        <td>Fantasy FPS</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/avgn-8bit.jpg" alt="AVGN 8-Bit" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=lU2KkxJtBU8" target="_blank">Video link</a></td>
+        <td>Angry Video Game Nerd 8-Bit</td>
+        <td>PC</td>
+        <td>Action/Platformer</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Gunship-gb.png" alt="Gunship GB" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=aIeTSRw0wx0" target="_blank">Video link</a></td>
+        <td>Gunship GB</td>
+        <td>GB/GBC</td>
+        <td>Rail Shooter</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Smackdown-1.jpg" alt="WWF SmackDown" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=Zn2DK2pnz0k" target="_blank">Video link</a></td>
+        <td>WWF SmackDown!</td>
+        <td>PS1</td>
+        <td>Wrestling</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Pico-mix.jpg" alt="PICO-8 Games" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=w3T8S0R0xjc" target="_blank">Video link</a></td>
+        <td>Backstreet Warriors/Pico World Race</td>
+        <td>PICO-8</td>
+        <td>Beat Em Up/Racing</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Fire-warrior-1.jpg" alt="40K Fire Warrior" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=eEGOn4wYh2w" target="_blank">Video link</a></td>
+        <td>Warhammer 40,000: Fire Warrior</td>
+        <td>PC</td>
+        <td>First-person Shooter</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/BioCrisis-1.jpg" alt="BioCrisis PC" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=5PMJyf5-Wfo" target="_blank">Video link</a></td>
+        <td>BioCrisis</td>
+        <td>PC</td>
+        <td>Indie/Survival Horror</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/RE-1.5.jpg" alt="Resident Evil 1.5" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=4-BHWq4iJH4" target="_blank">Video link</a></td>
+        <td>Resident Evil 1.5 Battle Coliseum</td>
+        <td>PS1</td>
+        <td>Fan Game/Mod</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Shadow-prisoner.jpg" alt="Shadow Prisoner" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=HwgwVNJbvkE" target="_blank">Video link</a></td>
+        <td>Shadow Prisoner</td>
+        <td>PC</td>
+        <td>Anime/2D Fighter</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2025/Poke-gold-151-part1.png" alt="Pokemon Gold" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/playlist?list=PLBBxSYze67ecr6gwXJyZUKmSAyIwkec2g" target="_blank">Video link</a></td>
+        <td>Pokemon Gold - 151 Challenge</td>
+        <td>GB/GBC</td>
+        <td>Adventure/RPG</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!--Table end-->
+<!--Footer start-->
+    <footer style="text-align: center; margin: 35px 0; color: hsl(0, 0%, 70%);">
+        <p>&copy; <span id="current-year"></span> LukePlayzIE</p>
+      </footer>
+<!--Footer end-->
+<script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
-  </html>
+  </body>
+</html>

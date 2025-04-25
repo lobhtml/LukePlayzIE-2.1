@@ -3,181 +3,193 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The official LukePlayzIE website. 
-    A nostalgic HTML website designed with 98.css. 
-    Browse gaming videos, retro art and other original content.">
+    <meta name="description" content="The official LukePlayzIE website. Version 2.0 Bootstrap build. Browse gaming videos, retro art and other original content.">
     <title>LukePlayzIE - Game list 2024</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/98.css">
-  </head>  
-  <style>
-body {
-  background-color: #c3c3c3;
-}
-table, th, td {
-  border:1px solid black;
-}
-  </style>
-<!--Site title bar-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  </head>
   <body>
-    <div class="title-bar">
-        <div class="title-bar-text">LukePlayzIE - Game list 2024</div>
-        <div class="title-bar-controls">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<!--Nav Bar start-->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">  
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="LukePlayzIE_24_Text2.png" alt="LukePlayzIE" height="50">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">About me</a>
+              <a class="nav-link active"  aria-current="page" href="game-list25.html">Game list</a>
+              <a class="nav-link" href="channel-art25.html">Channel art</a>
+            </div>
+          </div>
         </div>
+      </nav>
+<!--Nav Bar end-->
+<!--Alert banner start-->
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+    Take a moment to subscribe to my <a href="#" class="alert-link">YouTube channel</a>!
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<!--Alert banner end-->
+<div class="container-fluid">
+<!--Dropdown button start--> 
+      <div class="dropdown" style="margin-top: 20px;">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Sort by year
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="game-list25.html">2025</a></li>
+          <li><a class="dropdown-item" href="game-list24.html">2024</a></li>
+        </ul>
       </div>
-    <div>
-      <a href="index.html">
-        <img src="LukePlayzIE_24_Profile.png" alt="Site logo" width="120" height="120" style="padding: 10px;">
-      </a>
-    </div>
-<!--Dropdown menu-->
-      <select onchange="window.location.href=this.value" style="margin-top: 20px;">
-        <option value="">Select webpage</option>
-        <option value="index.html">About me</option>
-        <option value="game-list25.html" selected>Game list</option>
-        <option value="channel-art25.html">Channel art</option>
-      </select>
-<!--Sort by year-->
-      <select onchange="window.location.href=this.value" style="margin-top: 20px;">
-        <option value="">Sort by year</option>
-        <option value="game-list25.html">2025</option>
-        <option value="game-list25.html" selected>2024</option>
-      </select>
-<!--Table-->
-      <table style="width:100%; margin-top: 20px; font-size:125%; font-family:serif;">
-        <tr>
-          <th>Image</th>
-          <th>Link</th>
-          <th>Game title</th>
-          <th>System</th>
-          <th>Genre</th>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Celeste-classic1.jpg" alt="Celeste Classic" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=7oRH0jz77uY">Video link</a></td>
-          <td>Celeste Classic</td>
-          <td>PICO-8</td>
-          <td>Puzzle/Platformer</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Christmas-games.jpg" alt="Secret Santa/Blizzard Blowout 64" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=648jI__rY7Q">Video link</a></td>
-          <td>Secret Santa/Blizzard Blowout 64</td>
-          <td>PC</td>
-          <td>Puzzle/Platformer</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Rally-1.jpg" alt="Rush Rally 3" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=R8D4D5EL6gE">Video link</a></td>
-          <td>Rush Rally 3</td>
-          <td>PC</td>
-          <td>Driving/Racing</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Black-castle-1.jpg" alt="Black Castle" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=gQvXW-WL1X8">Video link</a></td>
-          <td>Black Castle</td>
-          <td>GB</td>
-          <td>Action/Platformer</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Overdriven-1.jpg" alt="Overdriven Reloaded" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=N0Niwt1MDDI">Video link</a></td>
-          <td>Overdriven Reloaded</td>
-          <td>PC</td>
-          <td>Bullet Hell/Shoot em up</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Xydonia-1.jpg" alt="XYDONIA" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=ltXyW2xxi-I">Video link</a></td>
-          <td>XYDONIA</td>
-          <td>PC</td>
-          <td>Bullet Hell/Shoot em up</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Arena-1.jpg" alt="The Elder Scrolls: Arena" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=KO6hgXiXOgI">Video link</a></td>
-          <td>The Elder Scrolls: Arena</td>
-          <td>PC</td>
-          <td>Action/RPG</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Dangan-gbc.jpg" alt="Dangan GB/Dangan GB2" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=byOSq130tXk">Video link</a></td>
-          <td>Dangan GB/Dangan GB2</td>
-          <td>GB/GBC</td>
-          <td>Bullet Hell/Shoot em up</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Demo-mix-2.jpg" alt="Chernobyl Radiation/Red Blue Cell" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=f7ssExaiTXI">Video link</a></td>
-          <td>Chernobyl Radiation/Red Blue Cell</td>
-          <td>PC</td>
-          <td>Mystery/Shoot em up</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Halo-gbc.jpg" alt="Halo: Combat Devolved" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=Bvuorhj-mHE">Video link</a></td>
-          <td>Halo: Combat Devolved</td>
-          <td>GBC</td>
-          <td>Demake/Shooter</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Picket-Machine.jpg" alt="Halloween Picket Maze/The Machine" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=o-HgF20goFc">Video link</a></td>
-          <td>Halloween Picket Maze/The Machine</td>
-          <td>PC</td>
-          <td>Puzzle/RPG</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Move-out-manor.jpg" alt="Move Out Manor" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=uuBfhfsSrhY">Video link</a></td>
-          <td>Move Out Manor</td>
-          <td>PC</td>
-          <td>Puzzle</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/steel-legion-1.jpg" alt="Steel Legion" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=X6g2X9bZzhI">Video link</a></td>
-          <td>Steel Legion</td>
-          <td>NES</td>
-          <td>Action/Platformer</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Hitman2-1.jpg" alt="Hitman 2: Silent Assassin" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=bsNBhfS7r5k">Video link</a></td>
-          <td>Hitman 2: Silent Assassin</td>
-          <td>PS2</td>
-          <td>Action/Stealth</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Wolfenstein-3d-1.jpg" alt="Wolfenstein 3D" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=ZDxpLM3gMhM">Video link</a></td>
-          <td>Wolfenstein 3D</td>
-          <td>PC</td>
-          <td>First-person Shooter</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/Daggerfall-1.jpg" alt="Daggerfall Unity" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=3J1d9_-c0d8">Video link</a></td>
-          <td>Daggerfall Unity</td>
-          <td>PC</td>
-          <td>Action/RPG</td>
-        </tr>
-        <tr>
-          <td><img src="Game art/Game art 2024/WCW-youtube.jpg" alt="WCW Mayhem" loading="lazy" width="125" style="padding: 5px;"></td>
-          <td><a href="https://www.youtube.com/watch?v=yv927oWE2c8">Video link</a></td>
-          <td>WCW Mayhem</td>
-          <td>PS1</td>
-          <td>Wrestling</td>
-        </tr>
-      </table>
-  </body>
-<!--Footer section-->
-  <footer style="text-align: center; margin: 30px 0; color: hsl(0, 0%, 0%); font-family: serif; font-size:150%;">
-    <p>&copy; <span id="current-year"></span> LukePlayzIE</p>
-  </footer>
-  <script>
+<!--Dropdown button end-->
+<!--Table start-->
+<div class="table-responsive" style="margin-top: 20px;">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Image</th>
+        <th scope="col">Link</th>
+        <th scope="col">Game title</th>
+        <th scope="col">System</th>
+        <th scope="col">Genre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="Game art/Game art 2024/Celeste-classic1.jpg" alt="Celeste Classic" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=7oRH0jz77uY" target="_blank">Video link</a></td>
+        <td>Celeste Classic</td>
+        <td>PICO-8</td>
+        <td>Puzzle/Platformer</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Christmas-games.jpg" alt="Xmas games" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=648jI__rY7Q" target="_blank">Video link</a></td>
+        <td>Secret Santa/Blizzard Blowout 64</td>
+        <td>PICO-8/PC</td>
+        <td>Puzzle/Platformer</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Rally-1.jpg" alt="Rush Rally 3" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=R8D4D5EL6gE" target="_blank">Video link</a></td>
+        <td>Rush Rally 3</td>
+        <td>PC</td>
+        <td>Driving/Racing</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Black-castle-1.jpg" alt="Black Castle GB" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=gQvXW-WL1X8" target="_blank">Video link</a></td>
+        <td>Black Castle</td>
+        <td>GB</td>
+        <td>Action/Platformer</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Overdriven-1.jpg" alt="Overdriven Reloaded" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=N0Niwt1MDDI" target="_blank">Video link</a></td>
+        <td>Overdriven Reloaded</td>
+        <td>PC</td>
+        <td>Bullet Hell/Shoot Em Up</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Xydonia-1.jpg" alt="XYDONIA" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=ltXyW2xxi-I" target="_blank">Video link</a></td>
+        <td>XYDONIA</td>
+        <td>PC</td>
+        <td>Bullet Hell/Shoot Em Up</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Arena-1.jpg" alt="Elder Scrolls Arena" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=KO6hgXiXOgI" target="_blank">Video link</a></td>
+        <td>The Elder Scrolls: Arena</td>
+        <td>PC</td>
+        <td>Adventure/RPG</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Dangan-gbc.jpg" alt="Dangan GB" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=byOSq130tXk" target="_blank">Video link</a></td>
+        <td>Dangan GB/Dangan GB2</td>
+        <td>GB/GBC</td>
+        <td>Bullet Hell/Shoot Em Up</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Demo-mix-2.jpg" alt="Demo mix 2" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=f7ssExaiTXI" target="_blank">Video link</a></td>
+        <td>Chernobyl Radiation/Red Blue Cell</td>
+        <td>PC</td>
+        <td>Mystery/Shoot Em Up</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Halo-gbc.jpg" alt="Halo GBC" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=Bvuorhj-mHE" target="_blank">Video link</a></td>
+        <td>Halo: Combat Devolved</td>
+        <td>GBC</td>
+        <td>Top-down Shooter</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Picket-Machine.jpg" alt="Demo mix" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=o-HgF20goFc" target="_blank">Video link</a></td>
+        <td>Halloween Picket Maze/The Machine</td>
+        <td>PC/GBC</td>
+        <td>Puzzle/RPG</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Move-out-manor.jpg" alt="Move Out Manor" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=uuBfhfsSrhY" target="_blank">Video link</a></td>
+        <td>Move Out Manor</td>
+        <td>PC</td>
+        <td>Puzzle</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/steel-legion-1.jpg" alt="Steel Legion" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=X6g2X9bZzhI" target="_blank">Video link</a></td>
+        <td>Steel Legion</td>
+        <td>NES</td>
+        <td>Action/Platformer</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Hitman2-1.jpg" alt="Hitman 2" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=bsNBhfS7r5k" target="_blank">Video link</a></td>
+        <td>Hitman 2: Silent Assassin</td>
+        <td>PS2</td>
+        <td>Action/Stealth</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Wolfenstein-3d-1.jpg" alt="Wolfenstein 3d" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=ZDxpLM3gMhM" target="_blank">Video link</a></td>
+        <td>Wolfenstein 3D</td>
+        <td>PC</td>
+        <td>First-person Shooter</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/Daggerfall-1.jpg" alt="Daggerfall" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=3J1d9_-c0d8" target="_blank">Video link</a></td>
+        <td>Daggerfall Unity</td>
+        <td>PC</td>
+        <td>Adventure/RPG</td>
+      </tr>
+      <tr>
+        <td><img src="Game art/Game art 2024/WCW-youtube.jpg" alt="WCW Mayhem" loading="lazy" width="125"></td>
+        <td><a href="https://www.youtube.com/watch?v=yv927oWE2c8" target="_blank">Video link</a></td>
+        <td>WCW Mayhem</td>
+        <td>PS1</td>
+        <td>Wrestling</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!--Table end-->
+<!--Footer start-->
+    <footer style="text-align: center; margin: 35px 0; color: hsl(0, 0%, 70%);">
+        <p>&copy; <span id="current-year"></span> LukePlayzIE</p>
+      </footer>
+<!--Footer end-->
+<script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
-  </html>
+  </body>
+</html>
