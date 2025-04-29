@@ -20,5 +20,4 @@
 
 ## v1.3 - 25-04-2025
 - New build recreated from scratch. Better organised, clearer HTML comments added for updating
-- Table border added
-- Meta tag site description added
+- Meta tag description added
