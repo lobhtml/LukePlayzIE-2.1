@@ -18,7 +18,7 @@
 - HTML comments added for ease of updating content
 - Channel art div class updated (correcting spacing issue on desktop vs mobile)
 
-## v2.0 - 25-04-2025
+## v1.3 - 25-04-2025
 - New build recreated from scratch. Better organised, clearer HTML comments added for updating
 - Table border added
 - Meta tag site description added
