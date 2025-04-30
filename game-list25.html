@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,12 +49,12 @@
       </div>
 <!--Table-->
 <div class="table-responsive" style="margin-top: 10px;">
-  <table class="table table-bordered">
+  <table id="gameTable" class="table table-bordered align-middle">
     <thead>
       <tr>
         <th style="width: 15%;">Image</th>
         <th style="width: 35%;">Game title</th>
-        <th style="width: 20%;">System</th>
+        <th id="systemHeader" style="width: 20%;">System <span id="systemArrow" style="font-size: 0.8em;">⇅</span></th>
         <th style="width: 20%;">Genre</th>
         <th style="width: 10%;">Link</th>
       </tr>
@@ -167,6 +167,48 @@
       </footer>
 <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+<script>
+  const systemHeader = document.getElementById("systemHeader");
+  const systemArrow = document.getElementById("systemArrow");
+  const table = document.getElementById("gameTable");
+  const tbody = table.querySelector("tbody");
+  const originalRows = Array.from(tbody.querySelectorAll("tr"));
+  let sortState = 0; // 0 = original, 1 = ascending, 2 = descending
+
+  systemHeader.style.cursor = "pointer";
+
+  systemHeader.addEventListener("click", () => {
+    let rows;
+
+    if (sortState === 0) {
+      // Ascending
+      rows = [...originalRows].sort((a, b) => {
+        const aText = a.children[2].textContent.trim().toLowerCase();
+        const bText = b.children[2].textContent.trim().toLowerCase();
+        return aText.localeCompare(bText);
+      });
+      sortState = 1;
+      systemArrow.textContent = "▲";
+    } else if (sortState === 1) {
+      // Descending
+      rows = [...originalRows].sort((a, b) => {
+        const aText = a.children[2].textContent.trim().toLowerCase();
+        const bText = b.children[2].textContent.trim().toLowerCase();
+        return bText.localeCompare(aText);
+      });
+      sortState = 2;
+      systemArrow.textContent = "▼";
+    } else {
+      // Original
+      rows = [...originalRows];
+      sortState = 0;
+      systemArrow.textContent = "⇅";
+    }
+
+    tbody.innerHTML = "";
+    rows.forEach(row => tbody.appendChild(row));
+  });
 </script>
   </body>
 </html>
