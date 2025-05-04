@@ -1,23 +1,9 @@
 # LukePlayzIE website - Bootstrap build history
 
-## v1.0 - 05-12-2024
-- Bootstrap framework linked
-- Nav bar added with brand image and active/unactive links
-- Alert message with close button
-- Table list feature with rows for various details
-- Dropdown button added to sort by year (linking to a new html doc)
-- Basic image carousel page to display art
-- Current year and copyright info added to the bottom of the webpage
-
-## v1.1 - 06-12-2024
-- Responsive table to prevent overflow on mobile devices
-- About me page added as default homepage
-
-## v1.2 - 21-04-2025
-- Lazy loading images
-- HTML comments added for ease of updating content
-- Channel art div class updated (correcting spacing issue on desktop vs mobile)
-
-## v1.3 - 25-04-2025
-- New build recreated from scratch. Better organised, clearer HTML comments added for updating
-- Meta tag site description added
+## v2.0 - 04-05-2025
+- Master build, webpages reconstructed without AI assistance for educational purposes
+- Index page uses basic components. Bootstrap containers, rows and columns, href button
+- Game list page features a basic table and dropdown to sort by year. Styling adjusted to bordered, fixed width rows
+- Channel art page also uses responsive rows and columns, repurposed from About me page
+- "mb-md-0" responsive border on second last image to ensure spacing is consistent on desktop and mobile
+- Copyright current year reconstructed using basic HTML
