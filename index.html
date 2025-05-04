@@ -3,69 +3,59 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The official LukePlayzIE website. Version 2.0 Bootstrap build. Browse gaming videos, retro art and other original content.">
+    <meta name="description" content="The official LukePlayzIE website. Browse games, retro art and other content. Version 2.0">
     <title>LukePlayzIE - About me</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   </head>
-  <style>
-  </style>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-<!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">  
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="LukePlayzIE_24_Text2.png" alt="LukePlayzIE" height="50">
-              </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html">About me</a>
-              <a class="nav-link" href="game-list25.html">Game list</a>
-              <a class="nav-link" href="channel-art25.html">Channel art</a>
-            </div>
-          </div>
+<!--Nav-->
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="LukePlayzIE_24_Text2.png" alt="LukePlayzIE Logo" height="50">
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">About me</a>
+          <a class="nav-link" href="game-list25.html">Game list</a>
+          <a class="nav-link" href="channel-art25.html">Channel art</a>
         </div>
-      </nav>
-<!--Alert banner-->
+      </div>
+    </div>
+  </nav>
+<!--Alert-->
 <div class="alert alert-primary alert-dismissible fade show" role="alert">
     Take a moment to subscribe to my <a href="https://www.youtube.com/@LukePlayzIE" class="alert-link">YouTube channel</a>!
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
-<!--About me section-->
+<!--Main body-->
 <div class="container-fluid">
-    <div class="container">
-        <div class="row" style="margin-top: 20px;">
-            <div class="col-12 col-md-6 mb-3">
+<div class="container">
+    <div class="row" style="margin-top: 20px">
+      <div class="col-12 col-md-6 mb-3 mb-md-0">
         <h4><strong>About me</strong></h4>
-        <p>I’m Luke and I create gaming content. 
-        I record HD gameplay on retro systems and PC/emulation. 
-        Here you can browse a list of games 
-        that I have played on my YouTube channel. 
-        I mostly record short demo gameplay videos 
-        but sometimes I upload longer playthrough content. 
-        To promote my brand, I recreate nostalgic startup screens, 
-        game menus and other retro art. 
-        These designs are displayed on the Channel art page. 
-        If you find my videos enjoyable or helpful, 
-        take a moment to subscribe to my YouTube channel!</p>
-        <a href="game-list25.html" class="btn btn-primary">Browse games</a>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="Banner.png" alt="LukePlayzIE Logo" loading="lazy" class="img-fluid">
-              </div>
-        </div>
+        <p>I’m Luke and I create gaming content. I record HD gameplay on retro systems and PC/emulation. Here you can browse a list of games that I have played on my YouTube channel. I mostly record short demo gameplay videos but sometimes I upload longer playthrough content. To promote my brand, I recreate nostalgic startup screens, game menus and other retro art. These designs are displayed on the Channel art page. If you find my videos enjoyable or helpful, take a moment to subscribe to my YouTube channel!</p>
+        <a class="btn btn-primary" href="game-list25.html" role="button">Browse games</a>
+      </div>
+      <div class="col-12 col-md-6">
+        <img src="Banner.png" style="width: 100%;">
+      </div>
     </div>
+  </div>
 </div>
 <!--Footer-->
-    <footer style="text-align: center; margin: 35px 0; color: hsl(0, 0%, 70%);">
-        <p>&copy; <span id="current-year"></span> LukePlayzIE</p>
-      </footer>
-<script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-</script>
+    <footer style="text-align: center; margin: 35px; color: hsl(0, 0%, 70%);">
+        <p>&copy; <span id="currentyear"></span> LukePlayzIE</p>
+    </footer>
+    <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById("currentyear").innerHTML = year;
+    </script>
   </body>
 </html>
