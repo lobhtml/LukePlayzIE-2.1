@@ -6,4 +6,4 @@
 - Game list page features a basic table and dropdown to sort by year. Styling adjusted to bordered, fixed width rows
 - Channel art page also uses responsive rows and columns, repurposed from About me page
 - "mb-md-0" responsive border on second last image to ensure spacing is consistent on desktop and mobile
-- Copyright current year reconstructed using basic HTML
+- Copyright current year reconstructed using basic HTML/Javascript
