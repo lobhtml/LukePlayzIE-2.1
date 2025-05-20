@@ -1,9 +1,9 @@
-# LukePlayzIE website - Bootstrap build history
+# LukePlayzIE website - Bootstrap build 2.1
 
-## v2.0 - 02-05-2025
-- Master build, webpages reconstructed without AI assistance for educational purposes
-- Index page uses basic components. Bootstrap containers, rows and columns, href button
-- Game list page features a basic table and dropdown to sort by year. Styling adjusted to bordered, fixed width rows
-- Channel art page also uses responsive rows and columns, repurposed from About me page
-- "mb-md-0" responsive border on second last image to ensure spacing is consistent on desktop and mobile (This removes border when 2 images comprise the bottom row on desktop)
-- Copyright current year reconstructed using basic HTML
+## v2.1 - 20-05-2025
+
+- Website rebuild from previous Bootstrap versions, reconstructed using more Bootstrap shorthand. Most inline HTML styling removed
+- Inline HTML styling retained to define custom margins - Bootstrap shorthand margins (m-4, for example) are useful but incremental
+- HTML syntax tidied and organised. <main> tag added to better define main page content
+- To ensure correct spacing on mobile "mb-3 mb-md-0" is added to the second last image of the Channel art page gallery. This retains the margin-bottom on mobile, while removing it on desktop - This avoids any additional margining below both Gallery columns on larger screens and ensures images are appropriately spaced on mobile
+- License updated to GNU to ensure code remains open source
