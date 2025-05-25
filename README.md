@@ -1,5 +1,3 @@
-# LukePlayzIE website
-A companion website to my gaming YouTube channel. Created using Bootstrap shorthand. Current build v2.1
-
-- A companion website to my gaming YouTube channel. Licensed under the GPL license - see the [LICENSE](./LICENSE) file for details.
-- This project uses [Bootstrap](https://getbootstrap.com/), which is licensed under the MIT License.
+# LukePlayzIE Website
+- A companion website to my gaming YouTube channel. This project is licensed under the GPL license - see [LICENSE](./LICENSE) for more details.
+- This project uses [Bootstrap shorthand](https://getbootstrap.com/), which is licensed under the MIT License.
