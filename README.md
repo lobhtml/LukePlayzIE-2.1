@@ -1,2 +1,2 @@
 # LukePlayzIE website
-The official LukePlayzIE website. Bootstrap build 2.1
+A companion website to my gaming YouTube channel. Created using Bootstrap shorthand. Current build v2.1
